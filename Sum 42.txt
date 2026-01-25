@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    int divide = a / b;  
+    int module = a % b; 
+    printf("%d %d", divide, module);
+
+    return 0;
+}
