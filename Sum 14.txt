@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() 
+{
+   int  num1 = 10;
+   int  num2 = 5;
+   int num3 = num1+num2;
+ 
+   int sum1 = 15;
+   int sum2 = 15;
+   int value = sum1+sum2;
+   printf("Output : %d\n",num3);
+   printf("Output : %d",value);
+   return 0;
+}
