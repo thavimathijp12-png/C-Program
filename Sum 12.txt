@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() 
+{
+   char ch = 'X';
+   char ch1= 'B';
+   printf("Output : %c\n",ch);
+   printf("Output : %c",ch1);
+   return 0;
+}
