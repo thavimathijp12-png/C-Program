@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int a  = 5 ;
+
+    int b = 10;
+
+    int s = 20;
+
+    int t = 30;
+
+    printf("%d %d\\n",a ,b);
+
+    printf("%d %d\\n",s ,t);
+
+    return 0;
+}
