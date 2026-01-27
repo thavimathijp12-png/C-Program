@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main()
+{
+   int accountType;
+   int Balance;
+   int WithdrawAmount;
+
+   scanf("%d%d",&accountType,&Balance);
+
+   scanf("%d",&WithdrawAmount);
+   switch (accountType) {
+      case 1:
+         if ( Balance >= WithdrawAmount) {
+            printf("Transaction Successfully");
+         }
+         else {
+            printf("Transaction rejected");
+         }
+         break;
+      case 2:
+         if (WithdrawAmount <= 5000) {
+            printf("Transaction Successfylly");
+         }
+         else {
+            printf("Transaction rejected");
+         }
+         break;
+      default:
+           printf("Invalid Account");
+
+
+   }
+   return 0;
+}
