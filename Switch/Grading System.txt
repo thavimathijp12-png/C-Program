@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main()
+{
+    int marks;
+    scanf("%d", &marks);
+    switch(marks/10)
+    {
+        case 1:
+        case 2:
+            printf("grade A");
+            break;
+
+        case 3:
+        case 4:
+            printf("grade B");
+            break;
+
+        case 5:
+            printf("grade C");
+            break;
+
+        case 6:
+            printf("grade D");
+            break;
+
+        case 7:
+            printf("grade E");
+            break;
+
+        case 8:
+            if (marks >= 35)
+                printf("grade Supplementary");
+            else
+                printf("grade Fail");
+            break;
+
+        default:
+            printf("grade Fail");
+    }
+
+    return 0;
+}
