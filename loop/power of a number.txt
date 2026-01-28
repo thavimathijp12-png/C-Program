@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main() {
+    int s,t;
+    int current =1;
+    scanf("%d%d",&s,&t);
+    for (int i=1;i<=t;i++) {
+        current = current * s;
+    }
+    printf("%d",current);
+    return 0 ;
+}
