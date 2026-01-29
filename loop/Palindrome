@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int N, original, reversed = 0, rem;
+    scanf("%d", &N);
+    original = N;
+    for (int temp = N; temp > 0; temp /= 10) {
+        rem = temp % 10;
+        reversed = reversed * 10 + rem;
+    }
+    if (original == reversed) printf("Yes\n");
+    else printf("No\n");
+    return 0;
+}
