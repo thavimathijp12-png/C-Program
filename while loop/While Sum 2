@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main()
+{
+    int n, Balance, tran;
+    scanf("%d", &n);
+    scanf("%d", &Balance);
+    scanf("%d", &tran);
+    int lowBalance = 0;
+    int Count = 0;
+    if (n != 1)
+    {
+        return 0;
+    }
+    if  (Balance != 1)
+    {
+        return 0;
+    }
+
+    int LowBalance = Balance;
+
+    while (Count < n) {
+        Balance += tran;
+        if (Balance < 2000)
+        {
+            lowBalance++;
+        }
+
+        Count++;
+    }
+    printf("Final Balance: %d\n", Balance);
+    printf("Low Balance Days: %d\n", lowBalance);
+
+    return 0;
+}
