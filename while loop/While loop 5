@@ -1,0 +1,34 @@
+int main()
+{
+    int n;
+    int status;
+    int successful = 0;
+    int cancelled = 0;
+    int i = 0;
+    scanf("%d", &n);
+    while (i < n)
+        {
+        scanf("%d",&status);
+
+        if (status == 1)
+        {
+            successful++;
+        } else if (status == 0)
+        {
+            cancelled++;
+        }
+
+        i++;
+    }
+    printf("Successful: %d\n", successful);
+    printf("Cancelled: %d\n", cancelled);
+
+    if (cancelled > successful)
+    {
+        printf("Status: Risk\n");
+    } else {
+        printf("Status: Safe\n");
+    }
+
+    return 0;
+}
