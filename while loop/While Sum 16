@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main() {
+    int maxweit,n;
+    int perweit;
+    int currweit = 0;
+    int people = 0;
+    int i = 0;
+    int overload = 0;
+    scanf("%d",&maxweit);
+    scanf("%d",&n);
+
+    while (i < n) {
+        scanf("%d",&perweit);
+
+        if (currweit+ perweit > maxweit) {
+            overload = 1;
+            break;
+        }
+        currweit += perweit;
+        people++;
+        i++;
+
+    }
+    printf("People Entered : %d\n",people);
+
+    if (overload)
+        printf("Overload Status : Yes\n");
+        else
+           printf("Overload Status : No\n");
+    return 0;
+    }
