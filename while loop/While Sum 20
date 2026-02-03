@@ -1,0 +1,40 @@
+#include <stdio.h>
+int main() {
+    int n;
+    int prev, curr;
+    int totalDrops = 0;
+    int consecutive = 0;
+    int crashDay = -1;
+    int day = 2;
+
+    scanf("%d", &n);
+
+    scanf("%d", &prev);
+
+    while (day <= n) {
+        scanf("%d", &curr);
+
+        if (curr < prev) {
+            totalDrops++;
+            consecutive++;
+
+            if (consecutive == 3 && crashDay == -1) {
+                crashDay = day;
+            }
+        } else {
+            consecutive = 0;
+        }
+
+        prev = curr;
+        day++;
+    }
+
+    if (crashDay != -1)
+        printf("Crash Day: %d\n", crashDay);
+    else
+        printf("Crash Day: Not Detected\n");
+
+    printf("Total Drops: %d\n", totalDrops);
+
+    return 0;
+}
