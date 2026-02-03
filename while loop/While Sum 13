@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main() {
+    int n,datapack;
+    scanf("%d",&n);
+    scanf("%d",&datapack);
+    int daily ;
+    int i = 0;
+    int ex = 0;
+    int over = 0;
+    while (i<n && datapack>0) {
+        scanf("%d",&daily);
+        datapack = datapack-daily;
+        i++;
+    }
+        if (datapack>0) {
+            printf("Exhausted Day:\n");
+            printf("Overused: 0");
+        }
+       else {
+           printf("Exhausted Day:%d\n",i);
+           if (datapack < 0){
+           printf("Overused:%d",-datapack);
+        }
+           else {
+               printf("Overused:0");
+           }
+
+    }
+    return 0;
+}
