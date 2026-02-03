@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+    int N, hours;
+    int inactive = 0;
+    int i = 0;
+    scanf("%d", &N);
+    while (i < N) {
+        scanf("%d", &hours);
+
+        if (hours == 0) {
+            inactive++;
+        }
+        i++;
+    }
+    printf("Inactive: %d\n", inactive);
+
+    if (inactive>= 3) {
+        printf("Risk Status: High");
+    }
+    else {
+        printf("Risk Status: Low");
+    }
+
+    return 0;
+}
